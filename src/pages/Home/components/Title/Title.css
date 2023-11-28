@@ -1,0 +1,19 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title-text {
+  font-weight: 800;
+  color: #0d2e30;
+}
+
+.title-content {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
