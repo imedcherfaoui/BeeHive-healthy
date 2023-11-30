@@ -5,6 +5,8 @@ import { RxDoubleArrowDown } from "react-icons/rx";
 import './Home.css';
 import HomeButtons from './components/HomeButtons/HomeButtons';
 import cup from '../../components/images/cup.png';
+import Contact from './Contact/Contact';
+import DevInfo from './DevInfo/DevInfo';
 
 function Home() {
   const [showArrow, setShowArrow] = useState(true);
@@ -31,8 +33,8 @@ function Home() {
   ];
 
   return (
-    <div className='pt-24 w-full' id="home">
-      <div className='home pb-28'>
+    <div className='home pt-24 w-full' id="home">
+      <div className='pb-28'>
         
         <div className='flex home-presentation'>
           
@@ -58,10 +60,10 @@ function Home() {
 
             {/* Vertical Texts */}
             <div className="absolute top-0 right-0 h-full flex flex-col -rotate-90 justify-end me-20 font-bold">
-              <h1 className="vertical-text-1 p-2 transform text-8xl slide-in-right">
+              <h1 className="vertical-text-1 p-2 transform mx-auto text-7xl slide-in-right">
                 MILKSHAKE
               </h1>
-              <h1 className="vertical-text p-2 transform text-8xl slide-in-left">
+              <h1 className="vertical-text p-2 transform mx-auto text-7xl slide-in-left">
                 MILKSHAKE
               </h1>
             </div>
@@ -80,6 +82,11 @@ function Home() {
       <div id="about">
         <About />
       </div>
+
+      <div id="contact">
+        <Contact />
+      </div>
+      <DevInfo />
     </div>
   );
 }

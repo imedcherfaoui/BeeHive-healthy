@@ -3,8 +3,18 @@ import { TfiAlignRight, TfiClose } from 'react-icons/tfi';
 import { NavbarData } from "./navbarData"
 import Logo from './Logo.png';
 import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  
+  const navigate = useNavigate();
+  const handleLogoClick = () => {
+    navigate('/');
+    window.location.reload(); // Refresh the page
+    window.location.href = '/#home'; // Set the hash to #home
+  };
+  
+
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -21,8 +31,8 @@ function Navbar() {
   return (
     <>
       <div className="navbar w-full p-4 flex justify-between items-center slide-in-top">
-        <div className="w-20 flex">
-          <img src={Logo} alt="logo" className="rounded-full"></img>
+        <div className="w-16 flex">
+          <img src={Logo} alt="logo" onClick={handleLogoClick} className="rounded-full"></img>
 
           {/* Menu for larger screens */}
           <div className="menu hidden md:flex md:ms-10">

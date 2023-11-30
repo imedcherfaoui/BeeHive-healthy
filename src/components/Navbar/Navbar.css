@@ -2,8 +2,9 @@
     position: fixed;
     align-items: center;
     z-index: 100;
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgb(255, 255, 255, 0.9);
     color: #11131F;
+    font-family: "Bungee", cursive;
 }
 
 .miniNavbar {
@@ -19,6 +20,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: 1000;
 }
 @keyframes miniNavbar {
   0% {
