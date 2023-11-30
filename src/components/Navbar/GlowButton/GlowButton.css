@@ -55,7 +55,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 180px;
+  min-width: 150px;
   border-radius: inherit;
   background-color: var(--button-background);
   overflow: hidden;

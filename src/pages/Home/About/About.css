@@ -7,9 +7,7 @@
 }
 .about {
     text-transform: uppercase;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(9, 4, 30);
     font-size: 8vw;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
