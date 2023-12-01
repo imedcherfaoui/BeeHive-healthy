@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
-import './GlowButton.css';
-import gsap from 'gsap';
-import chroma from 'chroma-js';
+import React, { useEffect } from "react";
+import "./GlowButton.css";
+import gsap from "gsap";
+import chroma from "chroma-js";
 
 function GlowButton({ content, icon: IconComponent }) {
-  
   useEffect(() => {
     const generateGlowButtons = () => {
       document.querySelectorAll(".glow-button").forEach((button) => {
-        let gradientElem = button.querySelector('.gradient');
-        
+        let gradientElem = button.querySelector(".gradient");
+
         if (!gradientElem) {
           gradientElem = document.createElement("div");
           gradientElem.classList.add("gradient");
@@ -33,9 +32,11 @@ function GlowButton({ content, icon: IconComponent }) {
             "--button-glow": chroma
               .mix(
                 getComputedStyle(button)
-                .getPropertyValue("--button-glow-start")
-                .trim(),
-                getComputedStyle(button).getPropertyValue("--button-glow-end").trim(),
+                  .getPropertyValue("--button-glow-start")
+                  .trim(),
+                getComputedStyle(button)
+                  .getPropertyValue("--button-glow-end")
+                  .trim(),
                 x / rect.width
               )
               .hex(),
@@ -50,14 +51,24 @@ function GlowButton({ content, icon: IconComponent }) {
 
     // Clean up event listeners on unmount
     return () => {
-      window.removeEventListener('resize', generateGlowButtons);
+      window.removeEventListener("resize", generateGlowButtons);
     };
   }, []);
 
   return (
     <button className="glow-button tracking-widest">
-      <span className='p-2 font-semibold' style={{ display: 'flex', alignItems: 'center' }}>
-        {IconComponent && <IconComponent className="icon" style={{ marginRight: '8px' }} size={30} />} {content}
+      <span
+        className="p-2 font-semibold"
+        style={{ display: "flex", alignItems: "center" }}
+      >
+        {IconComponent && (
+          <IconComponent
+            className="icon"
+            style={{ marginRight: "8px" }}
+            size={30}
+          />
+        )}{" "}
+        {content}
       </span>
     </button>
   );

@@ -1,5 +1,5 @@
-import React from 'react';
-import '../Contact.css';
+import React from "react";
+import "../Contact.css";
 
 function ContactForm() {
   return (
@@ -12,8 +12,12 @@ function ContactForm() {
         </div>
 
         <div className="flex justify-center">
-        <div className="w-full md:px-3 lg:px-6">
-            <form action="mailto:imadeddine300@hotmail.com" method="post" encType="text/plain">
+          <div className="w-full md:px-3 lg:px-6">
+            <form
+              action="mailto:imadeddine300@hotmail.com"
+              method="post"
+              encType="text/plain"
+            >
               <div className="mb-4">
                 <input
                   type="text"

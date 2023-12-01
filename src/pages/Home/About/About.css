@@ -1,67 +1,68 @@
-.about-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10vh;
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10vh;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Bungee&family=Bungee+Shade&display=swap");
 .sign {
-    background-color: #fcf3d7;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 2rem;
-    transform: scale(0.65, 0.65);
-  }
-  .sign :after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgb(9, 4, 30), 0 0 0 2rem #fcf3d7, 1rem -0.5rem 0 2rem rgba(147, 128, 181, 0.15);
-  }
-  .sign h1,
-  .sign h2,
-  .sign h3,
-  .sign p {
-    text-align: center;
-    color: rgb(9, 4, 30, 0.8);
-    padding-top: 3rem;
-  }
-  .sign h1 {
-    font-family: "Bungee Shade", cursive;
-    font-size: 4.5rem;
-    line-height: 5rem;
-  }
-  .sign h2 {
-    font-family: "Bungee", cursive;
-    font-size: 2.5rem;
-    line-height: rem;
-    padding: 1rem;
-    background-color: #ED5565;
-    color: #fcf3d7;
-  }
-  .sign h3 {
-    font-family: "Bungee", cursive;
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-    color: #435DB1;
-    padding: 1rem 0 2rem 0;
-  }
-  .sign p {
-    font-family: "Bungee", cursive;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    color: #435DB1;
-    padding: 1rem 0 2rem 0;
-  }
-  .sign ol {
-    margin: 0 auto;
-    padding: 5rem;
-    list-style: none;
-  }
+  background-color: #fcf3d7;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2rem;
+  transform: scale(0.65, 0.65);
+}
+.sign :after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2rem;
+  box-shadow: 0 0 0 1rem rgb(9, 4, 30), 0 0 0 2rem #fcf3d7,
+    1rem -0.5rem 0 2rem rgba(147, 128, 181, 0.15);
+}
+.sign h1,
+.sign h2,
+.sign h3,
+.sign p {
+  text-align: center;
+  color: rgb(9, 4, 30, 0.8);
+  padding-top: 3rem;
+}
+.sign h1 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 4.5rem;
+  line-height: 5rem;
+}
+.sign h2 {
+  font-family: "Bungee", cursive;
+  font-size: 2.5rem;
+  line-height: rem;
+  padding: 1rem;
+  background-color: #ed5565;
+  color: #fcf3d7;
+}
+.sign h3 {
+  font-family: "Bungee", cursive;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  color: #435db1;
+  padding: 1rem 0 2rem 0;
+}
+.sign p {
+  font-family: "Bungee", cursive;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #435db1;
+  padding: 1rem 0 2rem 0;
+}
+.sign ol {
+  margin: 0 auto;
+  padding: 5rem;
+  list-style: none;
+}

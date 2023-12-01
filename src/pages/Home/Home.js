@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import About from './About/About';
-import Title from './components/Title/Title';
+import React, { useEffect, useState } from "react";
+import About from "./About/About";
+import Title from "./components/Title/Title";
 import { RxDoubleArrowDown } from "react-icons/rx";
-import './Home.css';
-import HomeButtons from './components/HomeButtons/HomeButtons';
-import cup from '../../components/images/cup.png';
-import Contact from './Contact/Contact';
-import DevInfo from './DevInfo/DevInfo';
+import "./Home.css";
+import HomeButtons from "./components/HomeButtons/HomeButtons";
+import cup from "../../components/images/cup.png";
+import Contact from "./Contact/Contact";
+import DevInfo from "./DevInfo/DevInfo";
 
 function Home() {
   const [showArrow, setShowArrow] = useState(true);
@@ -20,41 +20,39 @@ function Home() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   const lines = [
-    { text: ['pure', 'love'], bold: [false, true] },
-    { text: ['of', 'healthy'], bold: [false, true] }
+    { text: ["pure", "love"], bold: [false, true] },
+    { text: ["of", "healthy"], bold: [false, true] },
   ];
 
   return (
-    <div className='home pt-24 w-full' id="home">
-      <div className='pb-28'>
-        
-        <div className='flex home-presentation'>
-          
+    <div className="home pt-24 w-full" id="home">
+      <div className="pb-28">
+        <div className="flex home-presentation">
           {/* left side */}
-          <div className='mt-6 w-fit left-side'>
-            <Title lines={lines}/>
+          <div className="mt-6 w-fit left-side">
+            <Title lines={lines} />
 
-            <div className='ms-10 py-5 lg:py-0 h-32 w-fit slide-in-bottom'>
+            <div className="ms-10 py-5 lg:py-0 h-32 w-fit slide-in-bottom">
               <HomeButtons />
             </div>
           </div>
 
           {/* right side */}
-          <div className='mt-6 pb-10 relative w-full flex justify-around right-side'>
+          <div className="mt-6 pb-10 relative w-full flex justify-around right-side">
             {/* Cup Image */}
-            <div className='p-10'>
+            <div className="p-10">
               <img
                 src={cup}
                 alt="cup"
-                className='cup-image block object-cover w-72 h-full'
+                className="cup-image block object-cover w-72 h-full"
               />
             </div>
 
@@ -68,17 +66,22 @@ function Home() {
               </h1>
             </div>
           </div>
-
         </div>
 
         <div
-          className={`arrow-scroll__wrapper mx-auto w-12 cursor-pointer text-5xl mt-20 lg:mt-0 ${showArrow ? '' : 'hide-arrow'}`}
-          onClick={() => document.getElementById("about").scrollIntoView({ behavior: 'smooth' })}
+          className={`arrow-scroll__wrapper mx-auto w-12 cursor-pointer text-5xl mt-20 lg:mt-0 ${
+            showArrow ? "" : "hide-arrow"
+          }`}
+          onClick={() =>
+            document
+              .getElementById("about")
+              .scrollIntoView({ behavior: "smooth" })
+          }
         >
           <RxDoubleArrowDown />
         </div>
       </div>
-      
+
       <div id="about">
         <About />
       </div>
