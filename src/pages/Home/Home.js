@@ -34,13 +34,13 @@ function Home() {
 
   return (
     <div className="home pt-24 w-full" id="home">
-      <div className="pb-28">
+      <div className="md:pb-28">
         <div className="flex home-presentation">
           {/* left side */}
           <div className="mt-6 w-fit left-side">
             <Title lines={lines} />
 
-            <div className="ms-10 py-5 lg:py-0 h-32 w-fit slide-in-bottom">
+            <div className="md:ms-10 py-5 lg:py-0 h-32 w-fit slide-in-bottom">
               <HomeButtons />
             </div>
           </div>

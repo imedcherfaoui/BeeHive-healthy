@@ -5,6 +5,7 @@
   background-color: rgb(255, 255, 255, 0.9);
   color: #11131f;
   font-family: "Bungee", cursive;
+  z-index: 1001;
 }
 
 .miniNavbar {
@@ -14,9 +15,8 @@
   text-transform: uppercase;
   height: 100%;
   width: 100%;
-  position: fixed; /* Fix the position on the screen */
-  z-index: 1;
-  background-color: #d6e1ff;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -57,6 +57,7 @@
 .menu-icon {
   cursor: pointer;
   transition: transform 0.6s, opacity 0.6s;
+  z-index: 1001; /* Ensure it appears above the miniNavbar */
 }
 .menu-icon.active {
   transform: rotate(-180deg);

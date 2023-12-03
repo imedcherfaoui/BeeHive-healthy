@@ -41,7 +41,11 @@ body .footer .bubbles {
   filter: url("#blob");
   max-width: 80%;
 }
-
+@media screen and (max-width: 439px) {
+    .bubbles {
+      width: 75%;
+    }
+}
 body .footer .bubbles .bubble {
   position: absolute;
   left: var(--position, 50%);

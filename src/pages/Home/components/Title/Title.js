@@ -3,7 +3,7 @@ import "./Title.css";
 
 function Title({ lines }) {
   return (
-    <div className="title-container pt-20 ms-10 flex-col slide-in-left tracking-wide">
+    <div className="title-container pt-20 md:ms-10 ms-5 flex-col slide-in-left tracking-wide">
       <span
         className="title-text text-4xl ms-1 me-96"
         style={{ whiteSpace: "nowrap" }}
